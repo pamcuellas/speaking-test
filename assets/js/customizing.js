@@ -72,7 +72,7 @@ $(document).ready( function() { 	// Wait until DOM be ready to start.
     var rootDirImage = "./assets/images/";
     let pos = 0;
     let posImageQ3 = 0;   
-    // $( ".progress-bar" ).css({ animationName:"none", width:"0%"});
+    $( ".progress-bar" ).css({ animationName:"none", width:"0%"});
 
     sctructure.forEach( ( value, index ) =>  {
         /* Set Preparation Time */ 
@@ -82,7 +82,6 @@ $(document).ready( function() { 	// Wait until DOM be ready to start.
             $(".title").text("Question number " + value.qNumber);
 
             $(".progress-bar").css({ animationName:"none", width:"0%"});
-            // $( ".progress-bar" ).css({width:"100%", animationName:"barr", animationDuration: value.qBarrPrepDuration + "s"});
 
             if (value.qNumber != 4) {
                 $("#image").prop("src", rootDirImage + value.qImage[pos]);
@@ -105,14 +104,15 @@ $(document).ready( function() { 	// Wait until DOM be ready to start.
         }
 
         /* Set Recording Time */
-        setTimeout( () => {  
-            var a = 1;
-            $(".msg").text("Start speaking now !!!"); 
-        }, value.qRecordingTime-10 ) ;
+        // setTimeout( () => {  
+        //     var a = 1;
+        //     $(".msg").text("Start speaking now !!!"); 
+        // }, value.qRecordingTime-10 ) ;
         
         setTimeout( () => {
-            $( ".progress-bar" ).css({ animationName:"none"});
-            $( ".progress-bar" ).css({width:"100%", animationName:"barr", animationDuration: value.qBarrMSGDuration + "s"});
+            $(".msg").text("Start speaking now !!!"); 
+            // $( ".progress-bar" ).css({ animationName:"none"});
+            $( ".progress-bar" ).css({animationName:"barr", width:"100%", animationDuration: value.qBarrMSGDuration + "s"});
         }, value.qRecordingTime);
     });
 
