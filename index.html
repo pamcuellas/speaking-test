@@ -19,7 +19,7 @@ body {
   position: relative; 
 }
 
-.progress-bar {
+#prgss-01 .progress-bar {
   width:0%;
   animation-direction: normal;
   animation-fill-mode: forwards;
@@ -80,18 +80,19 @@ body {
 <body>
 
   <div class="container-fluid h-100 d-flex flex-column align-items-center align-content-around">
-    <h1 class="title text-center bg-"></h1>
+    <h1 class="title text-center"></h1>
+    <span id="timer" class="font-weight-bold"></span>
       <div id="images" class="text-center">
         <img class="w-75" id="image" src="" alt="" >
       </div>
-  </div>
+      <h2 class="msg text-center text-danger"></h2> 
+      <div class="container">
+        <div id="prgss-01" class="progress">
+          <div class="progress-bar"></div>
+        </div>
 
-  <h2 class="msg text-center text-danger"></h2> 
-  
-  <div class="container">
-    <div class="progress">
-      <div class="progress-bar"></div>
-    </div>
+      </div>
+    
   </div>
 
   <script type="text/javascript" src="./assets/js/customizing.js"></script>
