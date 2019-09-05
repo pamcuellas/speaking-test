@@ -117,7 +117,6 @@ h4 {
 	border-radius: 25px;
 	background-color: #e5ccff;
 	border: 2px solid  #e5ccff;
-	/* margin-top: 20px; */
 	outline: 0;
 }
 
@@ -130,20 +129,33 @@ h4 {
 }
 
 
+@media screen and (max-width: 1000px) {
+  #images {
+    width: 40%;
+  }
+  .container {
+    width: 60%;
+  }
+}
+
 @media screen and (max-width: 800px) {
   #images {
     width: 50%;
   }
+  .container {
+    width: 65%;
+  }
+
 }
  
 @media screen and (max-width: 500px) {
 
   #images {
-    width: 80%;
+    width: 95%;
   }
 
   .container {
-    width: 90%;
+    width: 100%;
   }
 
   h1 {
