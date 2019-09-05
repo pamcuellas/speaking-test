@@ -1,3 +1,9 @@
+html, body {
+  height: 100%;
+  margin: 0%;
+  padding: 0%;
+}
+
 body {
   position: relative; 
 }
@@ -104,6 +110,25 @@ h4 {
   margin-right: -50%;
   transform: translate(-50%, -50%);
 }
+
+#btn {
+	height: 35px;
+	color: #3c3760;
+	border-radius: 25px;
+	background-color: #e5ccff;
+	border: 2px solid  #e5ccff;
+	/* margin-top: 20px; */
+	outline: 0;
+}
+
+#btn:hover {
+	background-color: #3c3760; 
+	color: white;
+	cursor: pointer;
+	transition-duration: 0.5s;
+	/* font-weight: unset; */
+}
+
 
 @media screen and (max-width: 800px) {
   #images {
