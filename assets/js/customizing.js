@@ -72,7 +72,7 @@ $(document).ready( function() { 	// Wait until DOM be ready to start.
 
     const sctructure = [
     {qNumber:1, 
-        qName:"Give and Advice",
+        qName:"Give an Advice",
         qPreparationTime: [0],
         qRecordingTime:30000,
         qBarrMSGDuration:90,
