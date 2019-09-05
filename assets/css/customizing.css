@@ -83,3 +83,52 @@ body {
     30%, 80% {opacity: 1;}
  } */
 
+.container {
+  width: 35%;
+}
+
+h4 {
+  color: white;
+  padding-bottom: 1%; 
+  border-radius: 2%;
+  border-radius: 5px;
+}
+
+
+#images {
+  margin: 0;
+  position: fixed;
+  width: 30%;
+  top: 55%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 800px) {
+  #images {
+    width: 50%;
+  }
+}
+ 
+@media screen and (max-width: 500px) {
+
+  #images {
+    width: 80%;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    margin-top: 10px;
+  }
+
+  h4,h3 {
+    font-size: 1.2rem;
+  }
+
+
+}
